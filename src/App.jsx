@@ -3,16 +3,16 @@ import SidberPage from "./pages/SidberPage";
 
 function App() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-12 gap-0 min-h-screen">
-      
-      <div className="md:col-span-2 bg-gray-100 shadow-md">
+    <div className="grid grid-cols-1 md:grid-cols-12 min-h-screen">
+      {/* Sidebar: collapses to full-width on small screens */}
+      <aside className="lg:col-span-3 xl:col-span-2 bg-gray-100 shadow-md p-4">
         <SidberPage />
-      </div>
+      </aside>
 
-
-      <div className="md:col-span-10 p-6 overflow-y-r-scroll-auto bg-white">
+      {/* Main content: takes remaining width, with scrollable content */}
+      <main className="md:col-span-9 lg:col-span-10 bg-white p-4 overflow-y-auto max-h-screen">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 }

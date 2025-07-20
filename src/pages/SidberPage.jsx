@@ -17,9 +17,9 @@ import { NavLink, Outlet } from "react-router-dom";
 export default function SidberPage() {
    return (
       <div className="flex w-full">
-         {/* Sidebar */}
+
          <aside className="w-full  min-h-screen p-6">
-            {/* Profile */}
+            
             <div className="flex flex-col items-center gap-3 ">
                <img
                   src="/profile-nEVPe_16.png"
@@ -51,11 +51,11 @@ export default function SidberPage() {
 
             {/* Navigation */}
             <nav className="space-y-4 text-xl">
-               <NavItem icon={<FaUser />} text="About Us" to="/about" />
+               <NavItem icon={<FaUser />} text="About Us" to="/" />
                <NavItem icon={<FaBriefcase />} text="Portfolio" to="/protfolio" badge="16" />
-               <NavItem icon={<FaListUl />} text="Services & Pricing" to="/services" />
+               {/* <NavItem icon={<FaListUl />} text="Services & Pricing" to="/services" /> */}
                <NavItem icon={<FaFileAlt />} text="Resume" to="/resume" />
-               <NavItem icon={<FaBoxOpen />} text="Products" to="/products" />
+            
                <NavItem icon={<FaBlog />} text="Blog" to="/blog" />
                <NavItem icon={<FaEnvelope />} text="Contact" to="/contact" />
             </nav>

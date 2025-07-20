@@ -14,7 +14,7 @@ function Banner() {
                   Explore my blog, project portfolio, and online resume.
                </p>
 
-               <div className="flex gap-4 mt-4">
+               <div className="flex flex-col md:flex-row items-center gap-4 mt-4">
                   <button className="flex items-center gap-2 bg-[#51C185] text-white px-6 py-3 text-xl rounded-full hover:bg-[#47ad76] transition">
                      <BiArrowBack className="rotate-180" /> View Portfolio
                   </button>
@@ -34,9 +34,9 @@ function Banner() {
             </div>
          </div>
 
-         <div className="flex items-center gap-6">
+         <div className="flex flex-col md:flex-row items-center gap-6  mt-8">
             <div className="flex items-center gap-3">
-               <h1 className="text-6xl font-bold text-[#51C185] border-r-2 px-3 ">5</h1>
+               <h1 className="text-6xl font-bold text-[#51C185] border-r-2 px-3">5</h1>
                <p>Years of<br /> Experience</p>
             </div>
 
